@@ -1,11 +1,12 @@
-import {Component} from '@angular/core'
+import { Component } from '@angular/core'
 
-import {Service} from './app.service'
+import { Service } from './app.service'
+import template from './app.template.html'
 
 @Component({
   selector: 'app',
   providers: [Service],
-  template: '{{greeting}} world!'
+  template: template
 })
 class AppComponent {
   constructor(service: Service) {
